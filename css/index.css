@@ -1,0 +1,217 @@
+.J_event{
+    width: 100%;
+    background-color: #1d2226;
+    height: 80px;
+
+}
+.J_event a{
+    text-decoration: none;
+    background: url("../image/top.jpg")no-repeat top center;
+    height: 80px;
+    display: block;
+    color: #9d9d9d;
+    position: relative;
+}
+.J_event i{
+    font-family: 'icomoon';
+    font-style: normal;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.shortcut{
+    background-color: #e3e4e5;
+    height: 32px;
+    line-height: 32px;
+
+}
+.shortcut li i{
+    font-family: 'icomoon';
+    font-style: normal;
+    color: #f10215;
+    font-size: 12px;
+}
+.shortcut .fl li{
+    font-size: 12px;
+    color: #9d9d9d;
+    margin-left: 202px;
+}
+.shortcut .fr li{
+    float: left;
+    margin-left: 17px;
+}
+.shortcut  li a{
+    color: #9d9d9d;
+    font-size: 12px;
+    text-decoration: none;
+}
+.shortcut  li a:hover{
+    color: #f10215;
+}
+.spacer{
+    width: 1px;
+    height: 10px;
+    background-color: #9d9d9d;
+    /*margin: 0;
+    padding: 0;*/
+    margin-top: 11px;
+}
+.shortcut em{
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 12px;
+}
+.shortcut .erwm{
+    border: 2px solid #ccc;
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+    position: absolute;
+    left: 0;
+    top: 33px;
+}
+.haerd{
+    background-color: #f6f6f6;
+    height: 140px;
+}
+.inner{
+    height: 140px;
+    position: relative;
+}
+.logo{
+    width: 190px;
+    height: 170px;
+    background-color: #7d2437;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    box-shadow: 0 -12px 10px rgba(0,0,0,0.3);
+}
+.logo a{
+    display: block;
+    width: 190px;
+    height: 170px;
+    text-decoration: none;
+    background: url("../image/logo.jpg");
+    text-indent: -999999px;
+}
+.sousuo{
+    /*margin-left: 130px;*/
+    width: 550px;
+    height: 35px;
+    /*background-color: #7d2437;*/
+    position: absolute;
+    left: 322px;
+    top: 26px;
+}
+.sousuo input{
+    width: 492px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #f10215;
+    padding-left: 5px;
+    color: #ccc;
+    float: left;
+    line-height: 37px;
+}
+.sousuo button{
+    width: 50px;
+    height: 37px;
+    /*border: 1px solid #f10215;*/
+    border: 0;
+    outline: none;
+    float: right;
+    line-height: 36px;
+    cursor: pointer;
+    background-color:#f10215 ;
+    padding: 0;
+    margin: 0;
+}
+.sousuo em{
+    display: block;
+    width:19px;
+    height: 16px;
+    position: absolute;
+    right: 57px;
+    top: 11px;
+    /*background-color: #7d2437;*/
+    background: url("../image/sprite-search.png");
+    cursor: pointer;
+}
+.sousuo em:hover{
+    background-position: -30px 0;
+}
+.hot{
+    width: 500px;
+    height: 50px;
+    /*background-color: #7d2437;*/
+    position: absolute;
+    left: 322px;
+    top: 64px;
+    line-height: 50px;
+}
+.hot li {
+    float: left;
+    margin-right: 4px;
+}
+.hot li a{
+    font-size: 12px;
+    color: #9d9d9d;
+    text-decoration: none;
+}
+.hot li a:hover{
+    color: #f10215
+}
+.shopping{
+    width: 189px;
+    height: 33px;
+    border: 1px solid red;
+    position: absolute;
+    left: 900px;
+    top: 26px;
+    text-align: center;
+}
+.shopping i{
+    font-family: 'icomoon';
+    font-style: normal;
+    color: #f10215;
+    line-height: 33px;
+    margin-right: 3px;
+}
+.shopping span{
+    font-size: 14px;
+    color: #f10215;
+    padding: 0;
+    margin: 0;
+}
+.shopping s{
+    height: 16px;
+    display: block;
+    text-decoration: none;
+    background-color:#f10215 ;
+    border-radius: 7px;
+    line-height: 16px;
+    text-align: center;
+    color: #f6f6f6;
+    position: absolute;
+    /*right: 28px;*/
+    left: 140px;
+    top: 2px;
+    font-size: 12px;
+    padding: 0 3px;
+}
+.pb{
+    width: 190px;
+    height: 40px;
+    background: #7d2437;
+    position: absolute;
+    left: 990px;
+    top: 90px;
+}
+.pb a{
+    width: 190px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    background: url("../image/computer.jpg")no-repeat top center;
+}
