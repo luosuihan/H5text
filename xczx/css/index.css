@@ -361,9 +361,44 @@ nav{
 .curriculum li {
     width: 228px;
     height: 270px;
-    background-color: #7d2437;
+    background-color: #fff;
     float: left;
     /*margin:0 4px;*/
     margin-right: 12px;
     margin-top: 12px;
+    transition: all 0.6s;
+}
+.curriculum .tp{
+    width: 228px;
+    height: 155px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+/*Í¼Æ¬Ëõ·ÅÐ§¹û*/
+.curriculum .tp img{
+    transition: all 0.6s;
+}
+.curriculum .tp:hover img{
+    transform: scale(1.1);
+}
+.curriculum .tp1 h5{
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 15px;
+    /*margin-bottom: 10px;*/
+}
+.curriculum .tp2 span{
+    font-weight: 400;
+    font-size: 14px;
+    color: orange;
+    margin-left: 15px;
+}
+.curriculum .tp2{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.curriculum ul li:hover{
+    transform: translate(0,-10px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
 }
