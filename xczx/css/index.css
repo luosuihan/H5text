@@ -367,11 +367,9 @@ nav{
     margin-right: 12px;
     margin-top: 12px;
     transition: all 0.6s;
+    overflow: hidden;
 }
 .curriculum .tp{
-    width: 228px;
-    height: 155px;
-    overflow: hidden;
     margin-bottom: 10px;
 }
 /*Í¼Æ¬Ëõ·ÅÐ§¹û*/
@@ -379,7 +377,8 @@ nav{
     transition: all 0.6s;
 }
 .curriculum .tp:hover img{
-    transform: scale(1.1);
+   /* transform: scale(1.1);*/
+    margin-left: -3px;
 }
 .curriculum .tp1 h5{
     font-weight: 400;
