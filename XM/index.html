@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header>
+    <div class="w inner">
+        <ul class="fl">
+            <li><a href="#">小米商城</a></li>
+            <li><a href="#">MIUI</a></li>
+            <li><a href="#">loT</a></li>
+            <li><a href="#">云服务</a></li>
+            <li><a href="#">金融</a></li>
+            <li><a href="#">优品</a></li>
+            <li><a href="#">小爱开放平台</a></li>
+            <li><a href="#">政企服务</a></li>
+            <li><a href="#">下载APP</a></li>
+            <li><a href="#">SelectRegion</a></li>
+        </ul>
+        <ul class="fl login">
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">消息通知</a></li>
+        </ul>
+        <ul class="shpping fr">
+            <li>
+                <a href="#" id="spg">购物车(0)</a>
+                <div class="zs" id="zss">
+                    <span>还未选择商品</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<!--主页部分-->
+<div class="main">
+    <div class="w main_inner">
+        <div class="logo fl">
+            <h1><a href="#">LOGO</a></h1>
+        </div>
+        <div class="main_nav fl" id="maiv_nav_id">
+            <ul>
+                <li><a href="#">小米手机</a></li>
+                <li><a href="#">红米</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">笔记本</a></li>
+                <li><a href="#">空调</a></li>
+                <li><a href="#">新品</a></li>
+                <li><a href="#">路由器</a></li>
+                <li><a href="#">智能硬件</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">社区</a></li>
+            </ul>
+        </div>
+        <div class="sousuo fr" id="ss">
+            <input type="text" id="in"/>
+            <button type="button" id="btn">搜索</button>
+            <div class="bq" id="xbq">
+                <em>小米</em>
+            </div>
+        </div>
+    </div>
+    <div class="sjshow" id="showsj_id">
+        <div class="w inner">
+            <ul>
+                <li>
+                    <div class="im"></div>
+                    <em>小米手机</em><br>
+                    <span>3299元起</span>
+                </li>
+                <div class="halving"></div>
+                <li></li>
+                <div class="halving"></div>
+                <li></li>
+                <div class="halving"></div>
+                <li></li>
+                <div class="halving"></div>
+                <li></li>
+                <div class="halving"></div>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="w ab">
+        <div class="carousel">
+            <a href="#" class="arrLeft"></a>
+            <a href="#" class="arrRight"></a>
+        </div>
+    </div>
+</div>
+<!--js代码-->
+
+<script>
+    function my$(id) {
+        return document.getElementById(id);
+    }
+    my$("spg").onmouseover = function () {
+        my$("zss").style.display = "block";
+       this.style.color = "red";
+    }
+    my$("spg").onmouseout = function () {
+        my$("zss").style.display = "none";
+        this.style.color = "#9d9d9d";
+    }
+    my$("in").onfocus = function () {
+        my$("xbq").style.display = "none";
+        this.style.border = "1px solid orange";
+        my$("btn").style.border = "1px solid orange";
+    }
+    my$("in").onblur = function () {
+        if (this.value ==0){
+            my$("xbq").style.display = "block";
+            this.style.border = "1px solid #ccc";
+            my$("btn").style.border = "1px solid #ccc";
+        }
+    }
+    var navs = my$("maiv_nav_id").getElementsByTagName("a");
+    for (var i=0;i<navs.length;i++){
+        navs[i].onmouseover = function () {
+                my$("showsj_id").style.display = "block";
+        }
+        navs[8].onmouseover = function () {
+            my$("showsj_id").style.display = "none";
+        }
+        navs[9].onmouseover = function () {
+            my$("showsj_id").style.display = "none";
+        }
+       /* navs[10].onmouseover = function () {
+            my$("showsj_id").style.display = "none";
+        }*/
+        navs[i].onmouseout = function () {
+            my$("showsj_id").style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
