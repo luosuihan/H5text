@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="in" value="按钮">
+<div id="dv">
+    <span>这是span标签</span><br>
+    <span>这是span标签</span><br>
+    <span>这是span标签</span><br>
+    <span>这是span标签</span><br>
+    <p>这是p标签</p>
+    <p>这是p标签</p>
+    <p>这是p标签</p>
+    <p>这是p标签</p>
+</div>
+<script>
+    var dvs = document.getElementById("dv");
+    var btn = document.getElementById("in");
+    btn.onclick = function () {
+        for (var i = 0;i<dvs.childNodes.length;i++){
+            var objs = dvs.childNodes[i];
+            if (objs.nodeType ==1 && objs.nodeName != "P"){
+                objs.style.background = "red";
+            }
+        }
+    };
+
+</script>
+</body>
+</html>

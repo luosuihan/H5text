@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .tab{
+            width: 280px;
+            height: 50px;
+            background: #f3f5f7;
+            box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+        }
+        .tab ul li{
+            width: 50px;
+            height: 30px;
+            display: block;
+            list-style: none;
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+            line-height: 30px;
+        }
+        .ccc{
+            background: #2288f6;
+        }
+        .dv{
+            width: 260px;
+            height: 260px;
+            background: #0EA9B1;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="tab">
+    <ul id="uu">
+        <li class="ccc">table1</li>
+        <li>table2</li>
+        <li>table3</li>
+        <li>table4</li>
+    </ul>
+</div>
+<div class="dv clear" id="dvcore">
+    table11111
+</div>
+<script>
+    var lis = document.getElementById("uu").getElementsByTagName("li");
+    var dvs = document.getElementById("dvcore");
+    for (var i=0;i<lis.length;i++){
+        lis[i].onclick = function () {
+            for (var j = 0;j<lis.length;j++){
+                lis[j].removeAttribute("class");
+            }
+            /*dvs.style.background = "#96b1a2";
+            dvs.innerText = this.textContent;*/
+            /*this.style.background = "#96b1a2";*/
+           this.className = "ccc";
+        }
+    }
+</script>
+</body>
+</html>

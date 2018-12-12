@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li achievement = 10>zs</li>
+    <li achievement = 20>ls</li>
+    <li achievement = 30>ww</li>
+    <li achievement = 40>wmz</li>
+    <li achievement = 50>lb</li>
+</ul>
+<ul id="uu">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<script>
+   /* var lis = document.getElementsByTagName("li");
+    for (var i = 0;i<lis.length;i++){
+        lis[i].onclick = function () {
+            console.log(this.getAttribute("achievement"));
+        }
+    }*/
+   var lis = document.getElementById("uu").getElementsByTagName("li");
+   for (var i=0;i<lis.length;i++){
+       lis[i].setAttribute("achievement",i*110);
+       lis[i].onclick = function () {
+           console.log(this.getAttribute("achievement"));
+       }
+   }
+</script>
+</body>
+</html>

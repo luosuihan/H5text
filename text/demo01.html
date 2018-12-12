@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="dv">
+    <span>这是span标签</span>
+    <p type="button">这是p标签</p>
+    <ul id="uu">
+        <li>这是li标签1</li>
+        <li>这是li标签2</li>
+        <li>这是li标签3</li>
+        <li>这是li标签4</li>
+    </ul>
+    <a href="#" value="这是a标签"></a>
+</div>
+<script>
+    var dv = document.getElementById("dv");
+    var dvchilds = dv.getAttributeNode("id");
+    console.log(dvchilds.nodeType+"======="+dvchilds.nodeName+"========="+dvchilds.nodeValue);
+   /* for (var i=0;i<dv.childNodes.length;i++){
+        // var dvchilds = dv.childNodes[i];
+        var dvchilds = dv.getAttributeNode("type");
+        console.log(dvchilds.nodeType+"======="+dvchilds.nodeName+"========="+dvchilds.nodeValue)
+    }*/
+
+
+   /*
+    3=======#text=========
+
+    1=======SPAN=========null
+    3=======#text=========
+
+    1=======P=========null
+    3=======#text=========
+
+    1=======UL=========null
+    3=======#text=========*/
+
+</script>
+</body>
+</html>

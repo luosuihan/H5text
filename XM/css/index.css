@@ -37,7 +37,7 @@ header {
     float: right;
 }
 
-/*Í·²¿·Östart*/
+/*Í·ï¿½ï¿½ï¿½ï¿½start*/
 header li {
     list-style: none;
     float: left;
@@ -88,6 +88,7 @@ header li a:hover {
     height: 100px;
     background-color: #fff;
     position: absolute;
+    z-index: 9999;
     right: -1px;
     top: 42px;
     display: none;
@@ -99,7 +100,7 @@ header li a:hover {
     background-color: #fff;
     display: block;
 }*/
-.shpping li a::before { /*ÎÄ×ÖÇ°¼ÓÈëÔªËØ*/
+.shpping li a::before { /*ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½*/
     content: "\e93a";
     font-family: icomoon;
     padding-right: 5px;
@@ -107,8 +108,8 @@ header li a:hover {
     padding-left: 0;
 }
 
-/*Í·²¿·Öend*/
-/*mian²¿·Ö*/
+/*Í·ï¿½ï¿½ï¿½ï¿½end*/
+/*mianï¿½ï¿½ï¿½ï¿½*/
 .main_inner {
     height: 56px;
     /*background: yellow;*/
@@ -222,7 +223,7 @@ header li a:hover {
     background-color: #437d72;
     float: left;
    /* display: inline-block;*/
-    margin: 36px 0 0 0; /*ÉÏ ÓÒ ÏÂ ×ó*/
+    margin: 36px 0 0 0; /*ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½*/
     /*margin-top: 36px;*/
     text-align: center;
 }
@@ -268,7 +269,7 @@ header li a:hover {
     left: 0;
     float: left;
     transform: translate(0,-50%);
-    background: url("../image/icon-slides.png")no-repeat -15px;
+    background: #f6f6f6;
 }
 .arrRight{
     float: right;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="按钮">
+<div>
+    <ul id="uu">
+        <li>这些都是什么玩意</li>
+        <li>这些都是什么玩意</li>
+        <li>这些都是什么玩意</li>
+        <li>这些都是什么玩意</li>
+        <li>这些都是什么玩意</li>
+        <li>这些都是什么玩意</li>
+        <li>这些都是什么玩意</li>
+        <li>这些都是什么玩意</li>
+    </ul>
+</div>
+<script>
+    var ben1 = document.getElementById("btn");
+    var objs = document.getElementById("uu");
+    var count = 0;
+    ben1.onclick = function () {
+        for (var i=0;i<objs.childNodes.length;i++){
+            var och = objs.childNodes[i];
+            /*if (och.nodeType == 3){
+                continue;
+            }*/
+            if (och.nodeType == 1 && och.nodeName == "LI"){
+                count ++;
+                och.style.background = count%2 == 0? "red":"yellow";
+            }
+        }
+    }
+</script>
+</body>
+</html>
