@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 300px;
+            height: 100px;
+            border: 1px dashed pink;
+        }
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="时不时点一下">
+<div id="dv"></div>
+<script>
+    function my$(id) {
+        return document.getElementById(id);
+    }
+    my$("btn").onclick = function () {
+       /* my$("dv").createElement('p');*/
+        var eobj = document.createElement('p');
+        my$("dv").appendChild(eobj);
+    }
+</script>
+</body>
+</html>

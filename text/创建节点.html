@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        i{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+<input type="button" id="btn" value="按钮">
+<div id="dv"></div>
+<script>
+    var dv1 = document.getElementById("dv");
+    var btn1 = document.getElementById("btn");
+    var names = ["王者荣耀","英雄联盟","穿越火线","绝地求生"];
+    btn1.onclick = function () {
+       /* dv1.innerHTML = "<p>创建一个p标签</p>";*/
+        var str = "<ul style='list-style: none;margin: 0;padding: 0;'>";
 
+        for (var i = 0;i<names.length;i++){
+            str += "<li>"+names[i]+"</li>";
+        }
+        str += "</ul>";
+        dv1.innerHTML = str;
+        var objs = dv1.getElementsByTagName("li");
+        for (var j = 0 ; j<objs.length;j++){
+            objs[j].onmouseover = function () {
+                this.style.cursor = "pointer";
+                this.style.background = "red";
+            }
+            objs[j].onmouseout = function () {
+                this.style.cursor = "none";
+                this.style.background = "";
+            }
+        }
+    }
+</script>
 </body>
 </html>
