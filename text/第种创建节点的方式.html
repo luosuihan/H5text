@@ -11,12 +11,17 @@
 <input type="button" id="btn" value="时不时点一下">
 <div id="dv"></div>
 <script>
+    var games = ["寒冰","轮子妈","刀锋","蓝枪"];
     function my$(id) {
         return document.getElementById(id);
     }
     my$("btn").onclick = function () {
-        my$("dv").createElement('p');
+        my$("dv").createElement('ul');
+        for (var i = 0;i<games.length;i++){
+            
+        }
     }
+
 </script>
 </body>
 </html>
